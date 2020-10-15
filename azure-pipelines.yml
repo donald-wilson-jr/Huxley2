@@ -65,9 +65,12 @@ stages:
       displayName: 'Deploy Huxley 2 to Azure web app service'
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Azure subscription 1(1)(e1c3b038-2619-43d0-b3b0-764ebf59bdec)'
+        azureSubscription: 'Azure subscription 1(e1c3b038-2619-43d0-b3b0-764ebf59bdec)'
         appType: 'webAppLinux'
-        WebAppName: 'tripit-huxley-demo'
+        WebAppName: 'tripit-huxley'
+        deployToSlotOrASE: true
+        ResourceGroupName: 'Tripit-Azure-Services'
+        SlotName: 'production'
         packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Huxley2.zip'
         RuntimeStack: 'DOTNETCORE|3.1'
 
