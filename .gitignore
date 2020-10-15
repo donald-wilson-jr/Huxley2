@@ -338,3 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Local files not to be checked in
+OpenLDBWS-Registration-NRE
+azure-web-services.info
+huxley-info-files.tar
+
