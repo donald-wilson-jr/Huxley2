@@ -67,7 +67,7 @@ stages:
         ConnectionType: 'AzureRM'
         azureSubscription: 'Azure subscription 1(e1c3b038-2619-43d0-b3b0-764ebf59bdec)'
         appType: 'webAppLinux'
-        WebAppName: 'tripit-huxley-eu'
+        WebAppName: 'tripit-huxley'
         deployToSlotOrASE: true
         ResourceGroupName: 'Tripit-Azure-Services'
         SlotName: 'production'
